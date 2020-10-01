@@ -10,7 +10,16 @@ namespace PorExtenso.Api.Controllers
         public IActionResult Get(int value)
         {
             Lib.Extenso extenso = value;
-            return Ok(new { response = extenso.ToString() });
+
+            try
+            {
+
+                return Ok(new { response = extenso.ToString() });
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(new { response = ex.Message });
+            }
         }
     }
 }
