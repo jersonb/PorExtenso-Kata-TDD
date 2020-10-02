@@ -13,7 +13,6 @@ namespace PorExtenso.Api.Controllers
 
             try
             {
-
                 return Ok(new { response = extenso.ToString() });
             }
             catch (System.Exception ex)
