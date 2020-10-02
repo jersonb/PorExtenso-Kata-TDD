@@ -57,7 +57,7 @@ namespace PorExtenso.Api
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "PorExtenso V1");
-                c.RoutePrefix = "api";
+                c.RoutePrefix = "swagger";
             });
 
             app.UseRouting();
