@@ -28,8 +28,8 @@ namespace PorExtenso.Test
         [InlineData(900_001, "novecentos mil e um")]
         [InlineData(900_019, "novecentos mil e dezenove")]
         [InlineData(900_020, "novecentos mil e vinte")]
-        [InlineData(900_210, "novecentos mil e duzentos e dez")]
-        [InlineData(999_851, "novecentos e noventa e nove mil e oitocentos e cinquenta e um")]
+        [InlineData(900_210, "novecentos mil duzentos e dez")]
+        [InlineData(999_851, "novecentos e noventa e nove mil oitocentos e cinquenta e um")]
         [InlineData(1_000_001, "ainda não estamos preparados para converter 1000001")]
         public void EscreverNumerosCompostosTest(int numero, string porExtenso)
         {

@@ -12,8 +12,12 @@ namespace PorExtenso.Lib
             {
                 return $"{milhar} mil";
             }
-          
-            return $"{milhar} mil e {ObterValor(resto)}";
+
+            if (resto <= 100)
+            {
+                return $"{milhar} mil e {ObterValor(resto)}";
+            }
+            return $"{milhar} mil {ObterValor(resto)}";
         }
     }
 }
