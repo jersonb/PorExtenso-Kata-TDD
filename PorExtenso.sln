@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorExtenso.Test", "PorExtenso.Test\PorExtenso.Test.csproj", "{720EF30E-DB85-4526-AADE-6BD0A0CDA55C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PorExtenso.Test", "PorExtenso.Test\PorExtenso.Test.csproj", "{720EF30E-DB85-4526-AADE-6BD0A0CDA55C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorExtenso.Lib", "PorExtenso.Lib\PorExtenso.Lib.csproj", "{67A5F84C-DDF9-4614-8E57-A7B6298C7049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PorExtenso.Lib", "PorExtenso.Lib\PorExtenso.Lib.csproj", "{67A5F84C-DDF9-4614-8E57-A7B6298C7049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorExtenso.Api", "PorExtenso.Api\PorExtenso.Api.csproj", "{4EDABAE7-76A6-4EF7-A846-BEAED0A9EC46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PorExtenso.Api", "PorExtenso.Api\PorExtenso.Api.csproj", "{4EDABAE7-76A6-4EF7-A846-BEAED0A9EC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorExtenso.FrontAsp", "PorExtenso.FrontAsp\PorExtenso.FrontAsp.csproj", "{FF93B018-B940-457B-AE56-A79D3071F02A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{720EF30E-DB85-4526-AADE-6BD0A0CDA55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +57,23 @@ Global
 		{4EDABAE7-76A6-4EF7-A846-BEAED0A9EC46}.Release|x64.Build.0 = Release|Any CPU
 		{4EDABAE7-76A6-4EF7-A846-BEAED0A9EC46}.Release|x86.ActiveCfg = Release|Any CPU
 		{4EDABAE7-76A6-4EF7-A846-BEAED0A9EC46}.Release|x86.Build.0 = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|x64.Build.0 = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|x64.ActiveCfg = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|x64.Build.0 = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF93B018-B940-457B-AE56-A79D3071F02A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {002CFBBA-39E1-4849-AF62-B4560632D35C}
 	EndGlobalSection
 EndGlobal

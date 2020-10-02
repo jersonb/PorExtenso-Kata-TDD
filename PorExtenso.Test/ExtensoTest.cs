@@ -24,6 +24,7 @@ namespace PorExtenso.Test
         [InlineData(500, "quinhentos")]
         [InlineData(999, "novecentos e noventa e nove")]
         [InlineData(1_000, "mil")]
+        [InlineData(1_001, "mil e um")]
         [InlineData(999_000, "novecentos e noventa e nove mil")]
         [InlineData(900_001, "novecentos mil e um")]
         [InlineData(900_019, "novecentos mil e dezenove")]
