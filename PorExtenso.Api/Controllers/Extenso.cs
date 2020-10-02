@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace PorExtenso.Api.Controllers
 {
     [ApiController]
-    [Route("porextenso")]
+    [Route("api/porextenso")]
     public class Extenso : ControllerBase
     {
         [HttpGet("{value:int}")]
