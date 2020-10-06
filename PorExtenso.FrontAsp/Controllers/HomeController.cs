@@ -5,16 +5,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PorExtenso.FrontAsp.Models;
 using PorExtenso.Lib;
+using Repository;
 
 namespace PorExtenso.FrontAsp.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly DatabaseService _data;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DatabaseService data)
         {
             _logger = logger;
+            _data = data;
         }
 
         public IActionResult Index()
@@ -34,14 +37,23 @@ namespace PorExtenso.FrontAsp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index([Bind("Numero")] Requisicao requisicao)
+        public async Task<IActionResult> Index([Bind("Numero", "NomeUsuario")] Requisicao requisicao)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
                     Extenso extenso = requisicao.Numero ?? 0;
-                    requisicao.Descricao = $"Seu valor é {extenso}";
+                    requisicao.Descricao = $"{requisicao.NomeUsuario} seu valor é {extenso}";
+
+                    var consulta = new Consulta
+                    {
+                        Extenso = requisicao.Descricao,
+                        ValorConsultado = requisicao.Numero.Value,
+                        NameUser = requisicao.NomeUsuario
+                    };
+
+                    _data.Create(consulta);
                 }
                 catch (Exception ex)
                 {
