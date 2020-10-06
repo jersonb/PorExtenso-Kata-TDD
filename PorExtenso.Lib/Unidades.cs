@@ -16,6 +16,6 @@ namespace PorExtenso.Lib
                 , "oito"
                 , "nove"
                 , "dez" 
-                }[valor];
+            }[valor];
     }
 }

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace PorExtenso.Lib
 {
-    public class Dezenas:Base
+    public class Dezenas : Base
     {
         public string ObterDezDezenove(int valor)
            => new Dictionary<int, string>
@@ -52,6 +52,6 @@ namespace PorExtenso.Lib
 
             return $"{dezena} e {ObterValor(resto)}";
         }
-       
+
     }
 }
