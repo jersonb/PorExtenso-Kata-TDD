@@ -17,7 +17,7 @@ namespace Repository
         }
 
         public List<Consulta> Get() 
-            => _collection.Find<Consulta>(consulta => string.IsNullOrEmpty(consulta.Id)).ToList();
+            => _collection.Find(consulta => string.IsNullOrEmpty(consulta.Id)).ToList();
 
         public Consulta Get(string id) 
             => _collection.Find(consulta => consulta.Id == id).FirstOrDefault();
