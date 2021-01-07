@@ -1,11 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PorExtenso.FrontAsp.Models;
 using PorExtenso.Lib;
 using Repository;
+using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace PorExtenso.FrontAsp.Controllers
 {
@@ -39,6 +39,7 @@ namespace PorExtenso.FrontAsp.Controllers
         [HttpPost]
         public async Task<IActionResult> Index([Bind("Numero", "NomeUsuario")] Requisicao requisicao)
         {
+            
             if (ModelState.IsValid)
             {
                 try
