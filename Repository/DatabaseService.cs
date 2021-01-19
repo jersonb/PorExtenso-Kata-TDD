@@ -11,13 +11,13 @@ namespace Repository
 
         public DatabaseService(IDatabaseSettings settings)
         {
-            var client = new MongoClient(settings.ConnectionString);
+ var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
 
             _collection = database.GetCollection<Consulta>(settings.CollectionName);
         }
 
-        public List<Consulta> Get() =>
+  public List<Consulta> Get() =>
             _collection.Find(new BsonDocument()).ToList();
 
         //_collection.Find<Consulta>(consulta => true).ToList();
@@ -25,7 +25,7 @@ namespace Repository
         public Consulta Get(string id) =>
             _collection.Find(consulta => consulta.Id == id).FirstOrDefault();
 
-        public Consulta Create(Consulta consulta)
+ public Consulta Create(Consulta consulta)
         {
             try
             {
