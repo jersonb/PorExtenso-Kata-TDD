@@ -1,5 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 
@@ -20,10 +19,8 @@ namespace Repository
   public List<Consulta> Get() =>
             _collection.Find(new BsonDocument()).ToList();
 
-        //_collection.Find<Consulta>(consulta => true).ToList();
-
-        public Consulta Get(string id) =>
-            _collection.Find(consulta => consulta.Id == id).FirstOrDefault();
+        public Consulta Get(string id) 
+            => _collection.Find(consulta => consulta.Id == id).FirstOrDefault();
 
  public Consulta Create(Consulta consulta)
         {
